@@ -1,3 +1,10 @@
-<p>modal-log works!</p>
-<app-car-log></app-car-log>
-<app-driver-log></app-driver-log>
+<ng-container *ngIf="display$ | async as display">
+  <section [class.open]="display === 'open'" (click)="close()">
+    <div (click)="$event.stopPropagation()">
+      <button class="close" type="button" (click)="close()">X</button>
+    </div>
+    <p>modal-log works!</p>
+    <app-car-log></app-car-log>
+    <app-driver-log></app-driver-log>
+  </section>
+</ng-container>

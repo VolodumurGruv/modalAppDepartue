@@ -6,6 +6,7 @@ import { MainComponent } from './main/main.component';
 import { ModalLogComponent } from './modal/components/modal-log/modal-log.component';
 import { CarLogComponent } from './modal/components/car-log/car-log.component';
 import { DriverLogComponent } from './modal/components/driver-log/driver-log.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -13,12 +14,10 @@ import { DriverLogComponent } from './modal/components/driver-log/driver-log.com
     MainComponent,
     ModalLogComponent,
     CarLogComponent,
-    DriverLogComponent
+    DriverLogComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, CommonModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
