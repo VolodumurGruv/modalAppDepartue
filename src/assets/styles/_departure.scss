@@ -1,0 +1,89 @@
+.log-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 35px;
+  margin-left: 90px;
+
+  &-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &-title {
+    text-transform: uppercase;
+  }
+}
+
+.departue {
+  margin-top: 69px;
+  margin-left: 90px;
+
+  &-label {
+    margin: 0;
+    font-size: 12px;
+    color: #78859a;
+  }
+}
+
+.departure-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dep {
+  display: flex;
+  flex-direction: column;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  &-item {
+    margin-left: 0;
+    padding-right: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: #dde4ff;
+  }
+
+  &-icon {
+    margin-left: 10px;
+    color: #011f50;
+  }
+}
+
+.arival {
+  display: flex;
+  flex-direction: column;
+  margin-right: 90px;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: #dde4ff;
+  border-radius: 12px !important;
+}
+
+.mat-form-field-underline {
+  width: 0 !important;
+}
+
+.mat-icon {
+  color: #011f50;
+}
+
+.time-wrap {
+  box-shadow: -4px 5px 20px rgba(180, 177, 177, 0.2);
+
+  .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #ffffff;
+    border-radius: 12px !important;
+  }
+}

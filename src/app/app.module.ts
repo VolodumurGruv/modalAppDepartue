@@ -7,7 +7,10 @@ import { ModalLogComponent } from './modal/components/modal-log/modal-log.compon
 import { CarLogComponent } from './modal/components/car-log/car-log.component';
 import { DriverLogComponent } from './modal/components/driver-log/driver-log.component';
 import { CommonModule } from '@angular/common';
-
+import { DepatueComponent } from './modal/components/depatue/depatue.component';
+import { MaterialModule } from './material.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,8 +18,16 @@ import { CommonModule } from '@angular/common';
     ModalLogComponent,
     CarLogComponent,
     DriverLogComponent,
+    DepatueComponent,
   ],
-  imports: [BrowserModule, CommonModule],
+  imports: [
+    BrowserModule,
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MaterialModule,
+    BrowserAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

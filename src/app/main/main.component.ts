@@ -9,9 +9,7 @@ import { ModalService } from '../modal/modal.service';
 export class MainComponent implements OnInit {
   constructor(private modalService: ModalService) {}
 
-  ngOnInit(): void {
-    this.modalService.open();
-  }
+  ngOnInit(): void {}
 
   open() {
     this.modalService.open();

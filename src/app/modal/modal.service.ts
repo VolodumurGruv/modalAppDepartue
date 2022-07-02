@@ -13,7 +13,6 @@ export class ModalService {
 
   open() {
     this.display.next('open');
-    console.log(this.display);
   }
 
   close() {

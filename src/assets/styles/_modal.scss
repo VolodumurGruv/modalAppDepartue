@@ -1,0 +1,49 @@
+section {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 250ms ease-in;
+
+  &.open {
+    visibility: inherit;
+    opacity: 1;
+  }
+
+  > div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 940px;
+    height: 640px;
+
+    background-color: white;
+
+    border-radius: 8px;
+
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
+
+    z-index: 1000;
+  }
+
+  button.close {
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 16px;
+  }
+}

@@ -1,0 +1,66 @@
+<div class="log-name">
+  <ng-container *ngIf="!change">
+    <p class="log-name-title">{{ logNameInput }}</p>
+  </ng-container>
+
+  <ng-container *ngIf="change">
+    <input [(ngModel)]="logNameInput" type="text" [value]="logNameInput" />
+  </ng-container>
+
+  <div>
+    <button class="log-name-btn" (click)="editLogName()">
+      <img src="../../../../assets/icons/pen.png" alt="" />
+    </button>
+  </div>
+</div>
+<div class="departue">
+  <form>
+    <div class="departure-form">
+      <!-- departue -->
+      <div class="dep">
+        <p class="departue-label">Departue</p>
+        <mat-form-field appearance="fill">
+          <mat-label><mat-icon> location_on</mat-icon> from </mat-label>
+          <input matInput type="text" />
+        </mat-form-field>
+        <p class="departue-label">Departue date and time</p>
+        <div class="time-wrap">
+          <mat-form-field appearance="fill">
+            <mat-label
+              ><mat-icon>access_time</mat-icon> {{ timeDepartue }}
+            </mat-label>
+            <input matInput type="datetime-local" />
+          </mat-form-field>
+        </div>
+      </div>
+
+      <!-- total time -->
+      <div class="time">
+        <p class="departue-label">Total time</p>
+        <div class="time-item">
+          <mat-icon class="time-icon"> access_time</mat-icon>
+          <span> 0 h 0 m</span>
+        </div>
+      </div>
+
+      <!-- arival -->
+      <div class="arival">
+        <p class="departue-label">Arival</p>
+        <mat-form-field appearance="fill">
+          <mat-label><mat-icon> location_on</mat-icon> to </mat-label>
+          <input matInput type="text" />
+        </mat-form-field>
+
+        <p class="departue-label">Arival date and time</p>
+        <div class="time-wrap">
+          <mat-form-field appearance="fill">
+            <mat-label
+              ><mat-icon>access_time</mat-icon> {{ timeArival }}
+            </mat-label>
+            <input matInput type="datetime-local" />
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

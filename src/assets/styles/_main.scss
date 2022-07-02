@@ -1,0 +1,16 @@
+.open-modal {
+  display: block;
+  position: sticky;
+  top: 45%;
+  left: 45%;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 1.2rem;
+
+  &:hover {
+    background-color: blue;
+    color: white;
+  }
+}
