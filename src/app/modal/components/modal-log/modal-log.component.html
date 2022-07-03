@@ -1,5 +1,5 @@
 <ng-container *ngIf="display$ | async as display">
-  <section [class.open]="display === 'open'">
+  <section class="main" [class.open]="display === 'open'">
     <div (click)="$event.stopPropagation()">
       <button class="close" type="button" (click)="close()">X</button>
 

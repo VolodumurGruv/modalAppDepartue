@@ -1,3 +1,35 @@
-<div class="driver">
+<section class="driver">
   <p>Driver information</p>
-</div>
+
+  <p class="departue-label">Driver</p>
+  <div class="driver-information">
+    <div class="driver-self" [class.active]="whois === 'self'" (click)="self()">
+      <mat-icon>person</mat-icon> <span class="driver-whois">Self</span>
+    </div>
+    <div
+      class="driver-other"
+      [class.active]="whois === 'other'"
+      (click)="other()"
+    >
+      <mat-icon>people</mat-icon>
+      <span class="driver-whois">Other</span>
+    </div>
+    <ng-container *ngIf="whois === 'other'">
+      <mat-form-field appearance="outline">
+        <mat-label>
+          <mat-icon>people</mat-icon> <span>Driver name</span></mat-label
+        >
+
+        <input
+          matInput
+          type="text"
+          [(ngModel)]="driverName"
+          [value]="driverName"
+        />
+      </mat-form-field>
+      <button class="log-name-btn" (click)="editDriverName()">
+        <img src="../../../../assets/icons/pen.png" alt="" />
+      </button>
+    </ng-container>
+  </div>
+</section>

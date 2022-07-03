@@ -1,0 +1,27 @@
+.driver {
+  margin-left: 90px;
+  margin-top: 40px;
+  margin-bottom: 4px;
+
+  &p {
+    margin: 0;
+  }
+
+  &-information {
+    display: flex;
+  }
+
+  &-self,
+  &-other {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    margin-right: 24px;
+    width: 188px;
+    height: 52px;
+  }
+}
+
+.active {
+  background-color: #dde4ff;
+}
