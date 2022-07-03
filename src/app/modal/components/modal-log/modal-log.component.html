@@ -1,7 +1,7 @@
 <ng-container *ngIf="display$ | async as display">
   <section class="main" [class.open]="display === 'open'">
     <div (click)="$event.stopPropagation()">
-      <button class="close" type="button" (click)="close()">X</button>
+      <button class="close" type="button" (click)="close()"><mat-icon>close</mat-icon></button>
 
       <app-depatue></app-depatue>
       <app-driver-log></app-driver-log>

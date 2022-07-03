@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DriverLogComponent implements OnInit {
   public whois: string = 'self';
   public driverName!: string;
+  public driverNameValue!: string;
 
   ngOnInit(): void {}
 
@@ -20,6 +21,10 @@ export class DriverLogComponent implements OnInit {
   }
 
   editDriverName() {
-    this.driverName;
+    this.driverNameValue = this.driverName;
+  }
+
+  clearName() {
+    this.driverName = '';
   }
 }
