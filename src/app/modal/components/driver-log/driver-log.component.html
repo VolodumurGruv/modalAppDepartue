@@ -3,12 +3,19 @@
 
   <p class="departue-label">Driver</p>
   <div class="driver-information">
-    <div class="driver-self" [class.active]="whois === 'self'" (click)="self()">
-      <mat-icon>person</mat-icon> <span class="driver-whois">Self</span>
+    <div
+      class="driver-self"
+      [class.active]="whois === 'self'"
+      [class.self-nonactive]="whois !== 'self'"
+      (click)="self()"
+    >
+      <mat-icon *ngIf="whois === 'self'">person</mat-icon>
+      <span class="driver-whois">Self</span>
     </div>
     <div
       class="driver-other"
       [class.active]="whois === 'other'"
+      [class.other-active]="whois === 'other'"
       (click)="other()"
     >
       <mat-icon>people</mat-icon>
