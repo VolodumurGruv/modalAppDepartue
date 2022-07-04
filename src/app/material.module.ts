@@ -4,6 +4,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import {MatSelectModule} from '@angular/material/select';
+
 import {
   NgxMatDatetimePickerModule,
   NgxMatNativeDateModule,
@@ -17,6 +19,7 @@ import {
     MatIconModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatSelectModule,
     NgxMatDatetimePickerModule,
     NgxMatNativeDateModule,
     NgxMatTimepickerModule,
@@ -27,6 +30,7 @@ import {
     MatIconModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatSelectModule,
     NgxMatDatetimePickerModule,
     NgxMatNativeDateModule,
     NgxMatTimepickerModule,

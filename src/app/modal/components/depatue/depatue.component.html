@@ -4,7 +4,14 @@
   </ng-container>
 
   <ng-container *ngIf="change">
-    <input [(ngModel)]="logNameInput" type="text" [value]="logNameInput" />
+    <mat-form-field appearance="fill">
+      <input
+        matInput
+        [(ngModel)]="logNameInput"
+        type="text"
+        [value]="logNameInput"
+      />
+    </mat-form-field>
   </ng-container>
 
   <div>
@@ -18,12 +25,12 @@
     <div class="departure-form">
       <!-- departue -->
       <div class="dep">
-        <p class="departue-label">Departue</p>
+        <p class="label">Departue</p>
         <mat-form-field appearance="fill">
           <mat-label><mat-icon> location_on</mat-icon> from </mat-label>
           <input matInput type="text" />
         </mat-form-field>
-        <p class="departue-label">Departue date and time</p>
+        <p class="label mt-7">Departue date and time</p>
         <div class="time-wrap">
           <mat-form-field appearance="fill">
             <mat-label
@@ -36,7 +43,7 @@
 
       <!-- total time -->
       <div class="time">
-        <p class="departue-label">Total time</p>
+        <p class="label">Total time</p>
 
         <div class="time-item">
           <mat-icon class="time-icon"> access_time</mat-icon>
@@ -46,13 +53,13 @@
 
       <!-- arival -->
       <div class="arival">
-        <p class="departue-label">Arival</p>
+        <p class="label">Arival</p>
         <mat-form-field appearance="fill">
           <mat-label><mat-icon> location_on</mat-icon> to </mat-label>
           <input matInput type="text" />
         </mat-form-field>
 
-        <p class="departue-label">Arival date and time</p>
+        <p class="label mt-7">Arival date and time</p>
         <div class="time-wrap">
           <mat-form-field appearance="fill">
             <mat-label

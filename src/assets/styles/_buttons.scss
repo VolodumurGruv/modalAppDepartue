@@ -1,0 +1,31 @@
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+
+  &-draft {
+    width: 97px;
+    height: 40px;
+    color: #00112c;
+    padding: 10px 24px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    border-radius: 100px;
+    background-color: #ffffff;
+  }
+  &-save {
+    margin-right: 90px;
+    margin-left: 21px;
+    color: #ffffff;
+    padding: 10px 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    border: none;
+    border-radius: 100px;
+    background: #1e3356;
+  }
+}

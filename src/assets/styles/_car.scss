@@ -1,0 +1,39 @@
+.car {
+  margin-left: 90px;
+  margin-top: 40px;
+
+  &-wrap {
+    display: flex;
+  }
+
+  &-title {
+    margin-top: 4px;
+  }
+
+  &-model {
+    margin-right: 24px;
+  }
+
+  .mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float
+    .mat-form-field-label {
+    display: none;
+  }
+
+  .mat-form-field-infix {
+    display: flex;
+    border-top: none;
+    padding-right: 10px;
+  }
+
+  .mat-select-value-text {
+    padding-left: 9px;
+  }
+
+  .mat-form-field-appearance-legacy .mat-form-field-label {
+    margin-left: 40px;
+  }
+}
+
+.img-icon {
+  margin-right: 10px;
+}

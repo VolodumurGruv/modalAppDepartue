@@ -1,1 +1,33 @@
-<p>car-log works!</p>
+<section class="car">
+  <p class="car-title">Car information</p>
+  <div class="car-wrap">
+    <div class="car-model">
+      <p class="label">Make and model</p>
+      <mat-form-field>
+        <mat-label>Make |Model</mat-label>
+        <img class="img-icon" src="../../../../assets/icons/helm.png" alt="" />
+        <mat-select>
+          <mat-option *ngFor="let car of carModel" [value]="car">{{
+            car
+          }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="car-registration">
+      <p class="label">Registration number</p>
+      <mat-form-field>
+        <mat-label>Registration</mat-label>
+        <img class="img-icon" src="../../../../assets/icons/gear.png" alt="" />
+        <mat-select>
+          <mat-option *ngFor="let number of numbers" [value]="number">{{
+            number
+          }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+</section>
+<section class="buttons">
+  <button class="buttons-draft">Drafts</button>
+  <button class="buttons-save">Save to log book</button>
+</section>

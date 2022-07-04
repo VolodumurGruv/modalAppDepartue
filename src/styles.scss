@@ -36,10 +36,13 @@ $modalApp-theme: mat.define-light-theme(
 
 /* You can add global styles to this file, and also import other style files */
 
+@import "./assets/styles/fonts";
 @import "./assets/styles/modal";
 @import "./assets/styles/main";
 @import "./assets/styles/departure";
 @import "./assets/styles/driver";
+@import "./assets/styles/car";
+@import "./assets/styles/buttons";
 
 html,
 body {
@@ -47,5 +50,5 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: $monserrat, Roboto, "Helvetica Neue", sans-serif;
 }
